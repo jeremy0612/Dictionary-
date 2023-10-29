@@ -1,0 +1,9 @@
+blueberry:viet quat:vd
+grape:nho:vd
+orange:cam:vd
+pear:le:vd
+Quang:Nhat:Nguyen
+strawberry:dau tay:vd
+trinh:newbie:write here
+Tung:Nhat:Nguyen
+watermelon:dua hau:vd
