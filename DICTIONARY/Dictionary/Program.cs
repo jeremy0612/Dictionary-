@@ -1,6 +1,8 @@
 using System;
 using System.IO;
-
+using data_loader;
+using algorithm;
+using System.Collections.Generic;
 
 namespace Program
 {
@@ -9,8 +11,9 @@ namespace Program
         public string word;
         public string meaning;
         public string example;
-        public WordNode left;
-        public WordNode right;
+        public int occurence;
+        public WordNode? left;
+        public WordNode? right;
 
         public WordNode(string word, string meaning, string example)
         {
@@ -20,17 +23,22 @@ namespace Program
             this.left = null;
             this.right = null;
         }
+        public WordNode(string word)
+        {
+            this.word = word;
+            this.left = null;
+            this.right = null;
+        }
     }
 
     public class Dict
     {
-        public WordNode root;
+        public WordNode? root;
 
         public Dict()
         {
             this.root = null;
         }
-
         public void Add(string word, string meaning, string example)
         {
             WordNode newNode = new WordNode(word, meaning, example);
@@ -85,7 +93,7 @@ namespace Program
             root = DeleteRec(root, word);
         }
 
-        private WordNode DeleteRec(WordNode currentNode, string word)
+        private WordNode? DeleteRec(WordNode? currentNode, string word)
         {
             if (currentNode == null)
             {
@@ -147,27 +155,55 @@ namespace Program
             SaveNodeToFile(node.right, writer);
         }
 
-        public string LoadFromFile(string fileName)
+        public string LoadFromFile(string fileName,string mode)
         {
-            StreamReader reader = new StreamReader(fileName);
-            string display = "List Vocabulary:\n";
-            
-            while (!reader.EndOfStream)
+            string display = "List Vocabulary:\n\n\n";
+            if(mode == "csv")
             {
-                string line = reader.ReadLine();
-                string[] parts = line.Split(':');
-
-                string word = parts[0];
-                string meaning = parts[1];
-                string example = parts[2];
-                display += "-->" + word;
-                display += "\n";
-                Add(word, meaning, example);
+                CsvFileProcessor reader = new CsvFileProcessor(fileName);
+                List<Word> words = reader.ReadFile();
+                for(int i = 0; i < words.Count; i++)
+                {
+                    string word = words[i].Vocab;
+                    string meaning = words[i].Meaning;
+                    string example = words[i].Example;
+                    display += "====================================================================================================================================================================\n";
+                    display += "Vocab: " + word + "\nMeaning: " + meaning + "\nExample: " + example + "\n\n";
+                    Add(word, meaning, example);
+                }
             }
-            reader.Close();
+            else if(mode == "json")
+            {
+                JsonFileProcessor reader = new JsonFileProcessor(fileName);
+                List<Word>? words = reader.ReadFile();
+                for(int i = 0; i < words.Count; i++)
+                {
+                    string word = words[i].Vocab;
+                    string meaning = words[i].Meaning;
+                    string example = words[i].Example;
+                    display += "====================================================================================================================================================================\n";
+                    display += "Vocab: " + word + "\nMeaning: " + meaning + "\nExample: " + example + "\n\n";
+                    Add(word, meaning, example);
+                }
+            }
             return display;
         }
-
+        public string LoadFromMongo()
+        {
+            string display = "List Vocabulary:\n";
+            MongoDb source = new MongoDb();
+            List<Word> data = source.Forward();
+            foreach (Word word in data)
+            {
+                string vocab = word.Vocab;
+                string meaning =word.Meaning;
+                string example = word.Example;
+                display += "====================================================================================================================================================================\n";
+                display += "Vocab: " + vocab + "\nMeaning: " + meaning + "\nExample: " + example + "\n\n";
+                Add(vocab,meaning,example);
+            }             
+            return display;
+        }
         private WordNode FindMinNode(WordNode node)
         {
             while (node.left != null)
@@ -177,9 +213,9 @@ namespace Program
             return node;
         }
 
-        public WordNode FindWord(string word)
+        public WordNode? FindWord(string word)
         {
-            WordNode currentNode = root;
+            WordNode? currentNode = root;
 
             while (currentNode != null)
             {
@@ -196,40 +232,15 @@ namespace Program
                     currentNode = currentNode.right;
                 }
             }
-            return null;
+            return currentNode;
         }
 
         public string FindOccurence(string Pattern, string algorithm)
         {
             if (algorithm=="KMP")
             {
-                Console.Write("Enter patterns (seperated by a space !): ");
-                string[] Patterns = Pattern.Split(' ');
-
-                StreamReader reader = new StreamReader("../../../Data/Text.txt");
-                string Text = "";
-                while (!reader.EndOfStream)
-                {
-                    string line = reader.ReadLine();
-                    Text += line;
-                }
                 string display = "";
-                for(int i=0; i< Patterns.Length;++i)
-                {
-                    try
-                    {
-                        KMP.LinkedList Result = new KMP.LinkedList();
-                        KMP kmp = new KMP();
-                        kmp.KMPSearch(Patterns[i], Text, Result);
-                        display += "Pattern: "+Patterns[i];
-                        display += "-->Occurences: " + Result.length().ToString();
-                        display += "\n";
-                    }
-                    catch
-                    {
-                        break;
-                    }
-                }
+        
                 return display;
             }
             else if (algorithm == "rabinkarp")

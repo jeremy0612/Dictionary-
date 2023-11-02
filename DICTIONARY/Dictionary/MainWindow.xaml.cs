@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
 using Program;
 
 namespace Dictionary
@@ -21,13 +23,13 @@ namespace Dictionary
     /// </summary>
     public partial class MainWindow : Window
     {
-        Dict dict = new Dict();
+        protected Dict dict = new Dict(); // Data loaded from source
+        protected Paragrapp para = new Paragrapp(); // paragraph from user
         string choice = "";
         public MainWindow()
         {
             InitializeComponent();
-            dict.LoadFromFile("../../../Data/Dictionary.txt");
-            var resultObject = new { Result = "Hello, world!" };
+            var resultObject = new { Result = "Hello, welcome to our Dictionary!" };
             ResultContentControl.DataContext = resultObject;
         }
         private bool ValidateAndParseString(string input, out string result)
@@ -51,11 +53,15 @@ namespace Dictionary
             if(choice == tag && Input.Visibility == Visibility.Visible)
             {
                 choice = "";
-                Input.Visibility = Visibility.Collapsed;
+                //Input.Visibility = Visibility.Collapsed;
             }
             else 
             {
                 choice = tag;
+                if (tag=="Save")
+                    FileType.Content = "Sink type";
+                else
+                    FileType.Content = "Source type";
                 Input.Visibility = Visibility.Visible;
             }  
             switch(tag)
@@ -68,9 +74,40 @@ namespace Dictionary
                 case "Add":
                 case "Delete":
                 case "Search":
-                case "Occurence":
                     PathAttribute.Visibility = Visibility.Collapsed;
                     WordAttribute.Visibility = Visibility.Visible;
+                    break;
+                case "Occurence":
+                    Input.Visibility = Visibility.Collapsed;
+                    if(dict.root == null)
+                    {
+                        MessageBox.Show("Please load the dictionary first !", "Message Box");
+                        break;
+                    }
+                    try
+                    {
+                        OpenFileDialog openFileDialog = new OpenFileDialog();
+                        openFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+                        if(openFileDialog.ShowDialog() == true)
+                        {  
+                            string fileName = openFileDialog.FileName;
+                            para = new Paragrapp();
+                            para.Forward(fileName);
+                            ResultContentControl.Content = "debug";
+                            
+                            para.filter.Forward(dict);
+                            string filt = para.filter.display;
+                            //string algorithm = Microsoft.VisualBasic.Interaction.InputBox("Choose algorithm (KMP or rabinkarp):", "Algorithm choosing");
+                            //string result = dict.FindOccurence(word,algorithm);
+                            MessageBox.Show("Successfull filtering !!!", "Message Box");
+                            ResultContentControl.Content = filt ;
+                        }    
+                    }
+                    catch (Exception ex)
+                    {
+                        // Show an error message to the user
+                        MessageBox.Show("An error occurred: " + ex.Message, "Error");
+                    }
                     break;
             }
         }
@@ -79,7 +116,8 @@ namespace Dictionary
         {
             if (ValidateAndParseString(Word.Text, out string word) &&
                 ValidateAndParseString(Meaning.Text, out string meaning) &&
-                ValidateAndParseString(Example.Text, out string example) )
+                ValidateAndParseString(Example.Text, out string example) &&
+                ValidateAndParseString(Source.Text, out string source) )
             {
                 // All input values are valid and parsed successfully
                 switch (choice)
@@ -136,26 +174,23 @@ namespace Dictionary
                         break;
                     case "Save":
                         Input.Visibility = Visibility.Collapsed;
-                        dict.SaveToFile("../../../Data/Dict.txt");
+                        para.SaveToFile("../../../data/Dict.txt");
                         break;
                     case "Load":
-                        dict.LoadFromFile("../../../Data/Dictionary.txt");
-                        ResultContentControl.DataContext = new { Result = dict.LoadFromFile("../../../Data/Dictionary.txt") };
-                        break;
-                    case "Occurence":
-                        try
+                        if(source == "csv")
                         {
-                            string algorithm = Microsoft.VisualBasic.Interaction.InputBox("Choose algorithm (KMP or rabinkarp):", "Algorithm choosing");
-                            string result = dict.FindOccurence(word,algorithm);
-                            MessageBox.Show(result, "Message Box");
-                            ResultContentControl.DataContext = new { Result = result };
+                            dict.LoadFromFile("../../../data/it_topic.csv","csv");
+                            ResultContentControl.DataContext = new { Result = dict.LoadFromFile("../../../data/it_topic.csv","csv") };
                         }
-                        catch (Exception ex)
+                        else if(source == "json")
                         {
-                            // Log the exception
-                            Console.WriteLine(ex.ToString());
-                            // Show an error message to the user
-                            MessageBox.Show("An error occurred: " + ex.Message, "Error");
+                            dict.LoadFromFile("../../../data/it_topic.json","json");
+                            ResultContentControl.DataContext = new { Result = dict.LoadFromFile("../../../data/it_topic.json","json") };
+                        }
+                        else if(source == "mongo")
+                        {
+                            dict.LoadFromMongo();
+                            ResultContentControl.DataContext = new { Result = dict.LoadFromMongo() };
                         }
                         break;
                 }

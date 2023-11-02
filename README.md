@@ -8,6 +8,7 @@ This dictionary management application is designed to help users easily manage t
 ### Features
 
 * Add, edit, and delete dictionary entries 📗
+* Filtering paragraph by majority vocabulary in technology.
 * Search for dictionary entries using the Rabin Karp and KMP algorithms 🔍
 * Export dictionary entries to different file formats 💾
 * Simple and easy-to-use interface

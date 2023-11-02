@@ -1,0 +1,562 @@
+[
+    {
+        "vocab": "Abstraction",
+        "meaning": "The process of hiding the internal details of an object or system so that the user only needs to know how to use it, not how it works.",
+        "example": "The user interface of a computer is an abstraction of the underlying hardware and software."
+    },
+    {
+        "vocab": "Access control",
+        "meaning": "The process of regulating who has access to what resources.",
+        "example": "For example, access control can be used to restrict who can log in to a computer system or who can view certain files."
+    },
+    {
+        "vocab": "Active directory",
+        "meaning": "A directory service developed by Microsoft that is used to manage users, computers, and other resources in a Windows domain.",
+        "example": "Active Directory is often used in enterprise environments to manage large numbers of users and computers."
+    },
+    {
+        "vocab": "Algorithm",
+        "meaning": "A step-by-step procedure for solving a problem.",
+        "example": "A common algorithm for sorting a list of numbers is the quicksort algorithm."
+    },
+    {
+        "vocab": "API",
+        "meaning": "Application Programming Interface. A way for two software programs to communicate with each other.",
+        "example": " The Google Maps API allows developers to embed maps in their own websites and apps."
+    },
+    {
+        "vocab": "App",
+        "meaning": "Application software that runs on a computer or mobile device.",
+        "example": "Popular apps include Google Chrome, Microsoft Word, and Facebook."
+    },
+    {
+        "vocab": "Application programming interface (API)",
+        "meaning": "A set of rules and specifications that define how software components should interact with each other.",
+        "example": "For example, the Google Maps API allows developers to embed maps in their own websites and apps."
+    },
+    {
+        "vocab": "Application software",
+        "meaning": "Software that is designed to perform a specific task, such as word processing, web browsing, or playing games.",
+        "example": "Microsoft Word is an example of application software."
+    },
+    {
+        "vocab": "Artificial intelligence",
+        "meaning": "The ability of a machine to simulate human intelligence.",
+        "example": "A chatbot can use artificial intelligence to understand and respond to customer inquiries."
+    },
+    {
+        "vocab": "Artificial intelligence (AI)",
+        "meaning": "The field of computer science that deals with the creation of intelligent agents, which are systems that can reason, learn, and act autonomously.",
+        "example": "AI is used in a variety of applications, including machine learning, natural language processing, and computer vision."
+    },
+    {
+        "vocab": "Bandwidth",
+        "meaning": "The amount of data that can be transferred between two devices in a given amount of time.",
+        "example": "A high-bandwidth internet connection allows you to download large files quickly."
+    },
+    {
+        "vocab": "Big data",
+        "meaning": "A term used to describe large and complex data sets that are difficult to process using traditional methods.",
+        "example": "Big data is often used to analyze customer behavior, improve business processes, and make better decisions."
+    },
+    {
+        "vocab": "Blockchain",
+        "meaning": "A distributed database that is shared among the nodes of a computer network.",
+        "example": "Blockchains are often used to store and manage cryptocurrencies, such as Bitcoin and Ethereum."
+    },
+    {
+        "vocab": "Boolean algebra",
+        "meaning": "A branch of mathematics that deals with the manipulation of logical values, such as true and false.",
+        "example": "Boolean algebra is used in computer programming to implement logical expressions."
+    },
+    {
+        "vocab": "Bootloader",
+        "meaning": "A program that loads the operating system into memory and starts it up.",
+        "example": "The bootloader is typically the first program to run when a computer is turned on."
+    },
+    {
+        "vocab": "Browser",
+        "meaning": "A software program that is used to access and navigate the internet.",
+        "example": "Popular browsers include Google Chrome, Microsoft Edge, and Firefox."
+    },
+    {
+        "vocab": "Bug",
+        "meaning": "A software defect or error.",
+        "example": "A bug in a web browser might cause it to crash when you visit a certain website."
+    },
+    {
+        "vocab": "Cache",
+        "meaning": "A temporary storage area for frequently accessed data.",
+        "example": "Web browsers cache web pages so that they can be loaded faster when you revisit them."
+    },
+    {
+        "vocab": "Central processing unit (CPU)",
+        "meaning": "The main processing unit in a computer.",
+        "example": "The CPU is responsible for executing instructions and processing data."
+    },
+    {
+        "vocab": "Cloud computing",
+        "meaning": "The delivery of computing services over the internet.",
+        "example": "Examples of cloud computing services include Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform."
+    },
+    {
+        "vocab": "Code",
+        "meaning": "Instructions for a computer to follow.",
+        "example": "Code is written in a programming language, such as Java, Python, or C++."
+    },
+    {
+        "vocab": "Command-line interface (CLI)",
+        "meaning": "A way to interact with a computer using text commands.",
+        "example": "CLIs are often used by system administrators and developers to manage servers and other systems."
+    },
+    {
+        "vocab": "Compiler",
+        "meaning": "A program that translates source code into machine code.",
+        "example": "A compiler for the Java programming language would translate Java source code into Java bytecode."
+    },
+    {
+        "vocab": "Compiler optimization",
+        "meaning": "The process of improving the performance or code size of a compiled program.",
+        "example": "Compiler optimizations can be used to make programs run faster or use less memory."
+    },
+    {
+        "vocab": "Computer architecture",
+        "meaning": "The design of a computer system, including its hardware and software components.",
+        "example": "The von Neumann architecture is a classic example of computer architecture."
+    },
+    {
+        "vocab": "Computer network",
+        "meaning": "A group of interconnected computers.",
+        "example": "A computer network can be as small as two computers connected together with a cable, or as large as the internet."
+    },
+    {
+        "vocab": "CPU",
+        "meaning": "Central Processing Unit. The main processing unit in a computer.",
+        "example": "The CPU is responsible for executing instructions and processing data."
+    },
+    {
+        "vocab": "CPU core",
+        "meaning": "An individual processing unit within a CPU.",
+        "example": "Modern CPUs often have multiple cores, which allows them to run multiple tasks simultaneously."
+    },
+    {
+        "vocab": "Cryptography",
+        "meaning": "The practice of secure communication in the presence of third parties.",
+        "example": "Cryptography is used to protect data from being accessed or modified by unauthorized individuals."
+    },
+    {
+        "vocab": "Cybercrime",
+        "meaning": "Crime that is committed using computers or the internet.",
+        "example": "Examples of cybercrime include hacking, malware attacks, and phishing scams."
+    },
+    {
+        "vocab": "Data center",
+        "meaning": "A facility that houses computer systems and associated components, such as storage systems and networking equipment.",
+        "example": "Data centers are used to store and process data for businesses and organizations of all sizes."
+    },
+    {
+        "vocab": "Data structure",
+        "meaning": "A way of organizing data in a computer so that it can be used efficiently.",
+        "example": "Arrays, linked lists, and trees are common data structures."
+    },
+    {
+        "vocab": "Database",
+        "meaning": "A collection of data that is organized in a structured way.",
+        "example": "Databases are used to store data for websites, apps, and other software programs."
+    },
+    {
+        "vocab": "Debug",
+        "meaning": "To identify and fix bugs in software.",
+        "example": "Debuggers are tools that help developers identify and fix bugs."
+    },
+    {
+        "vocab": "Debugging",
+        "meaning": "The process of finding and fixing errors in a computer program.",
+        "example": "Debuggers are tools that help programmers debug their programs."
+    },
+    {
+        "vocab": "Denial-of-service (DoS) attack",
+        "meaning": "A type of cyberattack that attempts to make a computer or network unavailable to its intended users.",
+        "example": "DoS attacks are often carried out by flooding a target with traffic, which can overwhelm the target's resources and cause it to crash."
+    },
+    {
+        "vocab": "Device",
+        "meaning": "A hardware component that connects to a computer.",
+        "example": "Examples of devices include keyboards, mice, printers, and monitors."
+    },
+    {
+        "vocab": "Device driver",
+        "meaning": "A software program that allows a computer to communicate with a device.",
+        "example": "A device driver for a printer would allow a computer to send print jobs to"
+    },
+    {
+        "vocab": "DevOps",
+        "meaning": "A set of practices that combine software development and IT operations.",
+        "example": "DevOps teams work together to automate the software development and deployment process."
+    },
+    {
+        "vocab": "Digital signal processing (DSP)",
+        "meaning": "The processing of digital signals, such as audio and video signals.",
+        "example": "DSP is used in a wide variety of applications, including digital photography, MP3 players, and cell phones."
+    },
+    {
+        "vocab": "Distributed database",
+        "meaning": "A database that is spread across multiple servers.",
+        "example": "Distributed databases are often used to store and process large amounts of data."
+    },
+    {
+        "vocab": "DNS",
+        "meaning": "Domain Name System. A system that translates domain names into IP addresses.",
+        "example": "When you type a domain name into your web browser, DNS translates it into an IP address so that your browser can connect to the web server."
+    },
+    {
+        "vocab": "Docker",
+        "meaning": "A containerization platform that allows developers to package their applications into containers that can be run on any platform.",
+        "example": "Docker containers are used to deploy applications in the cloud and on-premise."
+    },
+    {
+        "vocab": "Domain name system (DNS)",
+        "meaning": "A system that translates domain names into IP addresses.",
+        "example": "When you type a domain name into your web browser, DNS translates it into an IP address so that your browser can connect to the web server."
+    },
+    {
+        "vocab": "Driver",
+        "meaning": "A software program that allows a computer to communicate with a device.",
+        "example": "A driver for a printer would allow a computer to send print jobs to the printer."
+    },
+    {
+        "vocab": "E-commerce",
+        "meaning": "The buying and selling of goods and services online.",
+        "example": "E-commerce has become increasingly popular in recent years, as it offers consumers a convenient and efficient way to shop."
+    },
+    {
+        "vocab": "Email",
+        "meaning": "A system for sending and receiving electronic messages.",
+        "example": "Email is one of the most popular forms of communication on the internet."
+    },
+    {
+        "vocab": "Encapsulation",
+        "meaning": "The process of bundling data and code together into a single object.",
+        "example": "Encapsulation is a key concept in object-oriented programming."
+    },
+    {
+        "vocab": "Encryption",
+        "meaning": "The process of converting data into a secret code that can only be decoded by authorized individuals.",
+        "example": "Encryption is used to protect data from being accessed or modified by unauthorized individuals."
+    },
+    {
+        "vocab": "Enterprise resource planning (ERP) system",
+        "meaning": "A software system that integrates all of the core business processes of an organization, such as finance, accounting, manufacturing, and sales.",
+        "example": "ERP systems are often used by large businesses and organizations to streamline their operations and improve efficiency."
+    },
+    {
+        "vocab": "Firewall",
+        "meaning": "A network security system that monitors and controls incoming and outgoing network traffic.",
+        "example": "A firewall can help to protect your computer from malware and other threats."
+    },
+    {
+        "vocab": "Free software",
+        "meaning": "Software that is licensed under a license that allows users to freely use, modify, and distribute the software.",
+        "example": "Popular free software programs include the Linux operating system and the GIMP image editor."
+    },
+    {
+        "vocab": "Full-stack developer",
+        "meaning": "A developer who can work on both the front-end and back-end of a web application.",
+        "example": "A full-stack developer can build the user interface, the server, and the database for a web application."
+    },
+    {
+        "vocab": "Function",
+        "meaning": "A block of code that performs a specific task.",
+        "example": "Functions are used to organize and reuse code."
+    },
+    {
+        "vocab": "Gigabyte (GB)",
+        "meaning": "A unit of data storage equal to 1 billion bytes.",
+        "example": "A 1 GB hard drive can store 1 billion bytes of data."
+    },
+    {
+        "vocab": "Git",
+        "meaning": "A distributed version control system that allows developers to track changes to their code and collaborate on projects.",
+        "example": "Git is used by developers all over the world to manage their code."
+    },
+    {
+        "vocab": "Graphic user interface (GUI)",
+        "meaning": "A way for users to interact with a computer using a mouse and keyboard to click on graphical elements such as windows, buttons, and menus.",
+        "example": "Most modern operating systems, such as Windows and macOS, use GUIs."
+    },
+    {
+        "vocab": "Hardware",
+        "meaning": "The physical components of a computer, such as the CPU, memory, and storage.",
+        "example": "Hardware is responsible for the physical operation of a computer."
+    },
+    {
+        "vocab": "Heap",
+        "meaning": "A portion of memory that is used to store dynamically allocated data.",
+        "example": "The heap is used to store objects in object-oriented programming languages."
+    },
+    {
+        "vocab": "Heuristic",
+        "meaning": "A rule of thumb or educated guess that is used to solve a problem or make a decision.",
+        "example": "Heuristics are used in artificial intelligence to solve problems that are too complex to be solved using traditional algorithms."
+    },
+    {
+        "vocab": "Hostname",
+        "meaning": "A unique identifier for a device on a network.",
+        "example": "Hostnames are often used to identify websites, such as www.google.com."
+    },
+    {
+        "vocab": "HTML",
+        "meaning": "HyperText Markup Language. A markup language used to create web pages.",
+        "example": "HTML code is used to define the structure and content of a web page."
+    },
+    {
+        "vocab": "HTTP",
+        "meaning": "HyperText Transfer Protocol. The protocol used to transfer data between web servers and web browsers.",
+        "example": "When you visit a website, your web browser uses HTTP to request and receive the web page from the web server."
+    },
+    {
+        "vocab": "Infrastructure as code",
+        "meaning": "A practice of managing IT infrastructure using code.",
+        "example": "Infrastructure as code can be used to automate the provisioning and deployment of infrastructure."
+    },
+    {
+        "vocab": "Internet",
+        "meaning": "A global system of interconnected computer networks.",
+        "example": "The internet allows people to communicate with each other and access information from all over the world."
+    },
+    {
+        "vocab": "Internet of Things (IoT)",
+        "meaning": "A network of physical devices that are embedded with sensors, software, and other technologies to connect and exchange data with other devices and systems over the internet.",
+        "example": "Examples of IoT devices include smart thermostats, smart lights, and fitness trackers."
+    },
+    {
+        "vocab": "Intranet",
+        "meaning": "A private network that is used by an organization for internal communication and collaboration.",
+        "example": "Intranets are often used by businesses to share information with their employees and to collaborate on projects."
+    },
+    {
+        "vocab": "IP address",
+        "meaning": "Internet Protocol address. A unique identifier for a device on the internet.",
+        "example": "IP addresses are used to route traffic between devices on the internet."
+    },
+    {
+        "vocab": "Java",
+        "meaning": "A general-purpose programming language that is used to develop a wide range of applications, including web applications, mobile apps, and desktop software.",
+        "example": "Android apps are written in Java."
+    },
+    {
+        "vocab": "JavaScript",
+        "meaning": "A programming language used to add interactivity to web pages.",
+        "example": "JavaScript code can be used to create effects such as animations, drop-down menus, and forms."
+    },
+    {
+        "vocab": "Junkware",
+        "meaning": "Unwanted software that is often installed on computers without the user's knowledge or consent.",
+        "example": "Junkware can take up disk space, slow down performance, and even cause security problems."
+    },
+    {
+        "vocab": "Kernel",
+        "meaning": "The core of an operating system that is responsible for managing the system's resources.",
+        "example": "The Linux kernel is a popular kernel that is used by many Linux distributions."
+    },
+    {
+        "vocab": "Keystroke",
+        "meaning": "A single press of a key on a keyboard.",
+        "example": "A computer program can track the user's keystrokes to monitor their activity or to capture their password."
+    },
+    {
+        "vocab": "Kilobyte (KB)",
+        "meaning": "A unit of data storage equal to 1,024 bytes.",
+        "example": "A 1 KB file is 1,024 bytes in size."
+    },
+    {
+        "vocab": "Knowledge base",
+        "meaning": "A collection of information and resources that can be used to solve problems or answer questions.",
+        "example": "Knowledge bases are used by help desks and customer support teams to provide support to users."
+    },
+    {
+        "vocab": "Language model",
+        "meaning": "A statistical method that predicts the next word in a sequence based on the previous words in the sequence.",
+        "example": "Language models are used in natural language processing (NLP) applications, such as machine translation and speech recognition."
+    },
+    {
+        "vocab": "Latency",
+        "meaning": "The delay between a request and a response.",
+        "example": "Latency is an important factor to consider when designing and deploying network applications."
+    },
+    {
+        "vocab": "Library",
+        "meaning": "A collection of pre-written code that can be used by other programs.",
+        "example": "Many programming languages have standard libraries that provide common functionality, such as file I/O and string manipulation."
+    },
+    {
+        "vocab": "Linear data structure",
+        "meaning": "A data structure in which the elements are arranged in a linear order.",
+        "example": "Arrays and linked lists are common linear data structures."
+    },
+    {
+        "vocab": "Link",
+        "meaning": "A connection between two web pages.",
+        "example": "When you click on a link on a web page, your web browser navigates to the linked web page."
+    },
+    {
+        "vocab": "Linux",
+        "meaning": "A family of open-source operating systems.",
+        "example": "Linux is a popular operating system for servers and web hosting."
+    },
+    {
+        "vocab": "Log file",
+        "meaning": "A file that contains a record of events that have occurred on a computer system.",
+        "example": "Log files can be used to troubleshoot problems and to monitor system activity."
+    },
+    {
+        "vocab": "Loop",
+        "meaning": "A programming construct that allows a block of code to be executed repeatedly until a condition is met.",
+        "example": "Loops are used to iterate over data structures and to perform repetitive tasks."
+    },
+    {
+        "vocab": "Machine code",
+        "meaning": "Instructions that can be directly executed by a computer's CPU.",
+        "example": "Machine code is generated by a compiler from source code."
+    },
+    {
+        "vocab": "Machine learning",
+        "meaning": "A type of artificial intelligence that allows computers to learn without being explicitly programmed.",
+        "example": "Machine learning is used to develop applications such as spam filters and product recommendation systems."
+    },
+    {
+        "vocab": "Malware",
+        "meaning": "Malicious software, such as viruses, trojans, and spyware.",
+        "example": "Malware can damage your computer, steal your data, or even take control of your computer."
+    },
+    {
+        "vocab": "Megabyte (MB)",
+        "meaning": "A unit of data storage equal to 1 million bytes.",
+        "example": "A 1 MB MP3 file is 1 million bytes in size."
+    },
+    {
+        "vocab": "Memory",
+        "meaning": "The physical storage area in a computer where programs and data are stored while they are being used.",
+        "example": "Memory is often referred to as RAM (random access memory)."
+    },
+    {
+        "vocab": "Mobile app",
+        "meaning": "A software application that is designed to run on a mobile device, such as a smartphone or tablet.",
+        "example": "Mobile apps are used for a variety of purposes, including gaming, social media, and productivity."
+    },
+    {
+        "vocab": "Motherboard",
+        "meaning": "The main circuit board in a computer that connects all of the other components.",
+        "example": "The motherboard contains the CPU, memory, and other essential components."
+    },
+    {
+        "vocab": "Network",
+        "meaning": "A group of interconnected computers.",
+        "example": "A network can be as small as two computers connected together with a cable, or as large as the internet."
+    },
+    {
+        "vocab": "Networking",
+        "meaning": "The process of connecting computers and other devices to each other.",
+        "example": "A computer network can be used to share files and resources between devices."
+    },
+    {
+        "vocab": "Open source",
+        "meaning": "Software that is distributed with its source code and allows anyone to use, modify, and distribute it.",
+        "example": "Linux and many other popular software applications are open source."
+    },
+    {
+        "vocab": "Operating system",
+        "meaning": "A software that manages computer hardware and provides common services for other software.",
+        "example": "Windows, macOS, and Linux are popular operating systems."
+    },
+    {
+        "vocab": "Operating system (OS)",
+        "meaning": "The software that controls a computer's hardware and provides basic services such as file management, process management, and memory management.",
+        "example": "Popular operating systems include Windows, macOS, and Linux."
+    },
+    {
+        "vocab": "Output",
+        "meaning": "The data that is produced by a program.",
+        "example": "The output of a program might be displayed on a screen, printed to a printer, or saved to a file."
+    },
+    {
+        "vocab": "Password",
+        "meaning": "A secret word or phrase used to authenticate a user.",
+        "example": "Passwords are used to protect computers, networks, and online accounts."
+    },
+    {
+        "vocab": "Peripherals",
+        "meaning": "External devices that are connected to a computer, such as printers, scanners, and webcams.",
+        "example": "Peripherals can be used to input or output data, or to control the computer."
+    },
+    {
+        "vocab": "Programming language",
+        "meaning": "A formal language that is used to create computer programs.",
+        "example": "Java, Python, and C++ are popular programming languages."
+    },
+    {
+        "vocab": "Protocol",
+        "meaning": "A set of rules that define how two or more devices communicate with each other.",
+        "example": "Popular protocols include HTTP (HyperText Transfer Protocol), TCP/IP (Transmission Control Protocol/Internet Protocol), and FTP (File Transfer Protocol)."
+    },
+    {
+        "vocab": "RAM",
+        "meaning": "Random access memory. The type of memory that is used to store programs and data while they are being used.",
+        "example": "RAM is a volatile memory, meaning that the data stored in RAM is lost when the computer is turned off."
+    },
+    {
+        "vocab": "ROM",
+        "meaning": "Read-only memory. A type of non-volatile memory that is used to store permanent data, such as the BIOS (basic input/output system).",
+        "example": "ROM is a type of non-volatile memory, meaning that the data stored in ROM is retained even when the computer is turned off."
+    },
+    {
+        "vocab": "Scanner",
+        "meaning": "A device that converts physical documents, such as paper and photos, into digital images.",
+        "example": "Scanners are often used to scan documents into a computer so that they can be edited or stored digitally."
+    },
+    {
+        "vocab": "Server",
+        "meaning": "A computer that provides services to other computers on a network.",
+        "example": "A web server hosts websites and makes them accessible to users over the internet."
+    },
+    {
+        "vocab": "Software",
+        "meaning": "The programs and applications that run on a computer.",
+        "example": "Software is contrasted with hardware, which is the physical components of a computer."
+    },
+    {
+        "vocab": "Software development",
+        "meaning": "The process of creating and maintaining software applications",
+        "example": ""
+    },
+    {
+        "vocab": "Spam",
+        "meaning": "Unsolicited and unwanted electronic messages, such as email and text messages.",
+        "example": "Spam can be annoying and even harmful, as it can contain malware or phishing links."
+    },
+    {
+        "vocab": "Storage",
+        "meaning": "The physical devices that are used to store data, such as hard drives, solid state drives, and optical discs.",
+        "example": "Storage is used to store data permanently, so that it can be accessed even when the computer is turned off."
+    },
+    {
+        "vocab": "System on a chip (SoC)",
+        "meaning": "A single integrated circuit that contains all of the components of a computer system, such as the CPU, memory, and graphics processing unit (GPU).",
+        "example": "SoCs are often used in mobile devices, such as smartphones and tablets."
+    },
+    {
+        "vocab": "Terabyte (TB)",
+        "meaning": "A unit of data storage equal to 1 trillion bytes.",
+        "example": "A 1 TB hard drive can store 1 trillion bytes of data."
+    },
+    {
+        "vocab": "User interface (UI)",
+        "meaning": "The part of a program that allows users to interact with it.",
+        "example": "A well-designed UI is easy to use and understand."
+    },
+    {
+        "vocab": "Virus",
+        "meaning": "A type of malware that can self-replicate and spread to other computers.",
+        "example": ""
+    }
+]

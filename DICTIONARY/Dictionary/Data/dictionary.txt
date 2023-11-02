@@ -1,6 +1,6 @@
 blueberry:viet quat:vd
 grape:nho:vd
-lemon:chanh:vd
+lemon:chanh:qua chanh chua qua
 orange:cam:vd
 pear:le:vd
 Quang:Nhat:Nguyen
