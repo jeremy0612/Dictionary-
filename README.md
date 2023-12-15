@@ -1,4 +1,4 @@
-# Text-Handling
+# Text Handling
 ## Dictionary Management Application
 
 ### Objective
